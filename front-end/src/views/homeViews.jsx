@@ -1,9 +1,10 @@
+import HomeSection from "../components/section/homeSection";
+
 const HomeViews = () => {
   return (
-    <div>
-      <h1 className="underline">Home</h1>
-      <button className="btn btn-accent">hhe</button>
-    </div>
+    <main className="min-h-screen h-screen w-screen bg-base-200">
+      <HomeSection />
+    </main>
   );
 };
 
