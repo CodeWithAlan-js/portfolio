@@ -12,7 +12,7 @@ const HomeSection = () => {
   }, []);
 
   return (
-    <section className="h-full w-full relative flex flex-col">
+    <section className="min-h-screen w-full relative flex flex-col">
       <div className="absolute top-10 left-10 md:top-20 md:left-20">
         <h1 className="text-5xl animate-fade-right">Welcome</h1>
         {visible && <div className="animate-divAppear bg-neutral h-1"></div>}
