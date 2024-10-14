@@ -1,8 +1,9 @@
 import imgDecoration from "../../assets/imgDecoration.svg";
 import { FaChevronDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import profil from "../../assets/profil.png";
 
-const HomeSection = () => {
+const HomeSection = ({ contactRef }) => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -10,6 +11,10 @@ const HomeSection = () => {
       setVisible(true);
     }, 1000);
   }, []);
+
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="min-h-screen w-full relative flex flex-col">
@@ -21,16 +26,20 @@ const HomeSection = () => {
         <div className="flex flex-col justify-end items-end ">
           <img className="w-20 animate-wiggle" src={imgDecoration} alt="" />
           <img
-            src="https://picsum.photos/200"
+            src={profil}
             className="rounded-full h-40 w-40 animate-fade "
             alt=""
           />
         </div>
         <p className="text-center text-l animate-fade-left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora et
-          rerum quisquam consequuntur fugit eos inventore, !
+          My name is Alan, I'm 23 years old, and I'm a passionate full-stack
+          developer. I enjoy building efficient and innovative web solutions,
+          from user interfaces to backend infrastructures.
         </p>
-        <button className="btn btn-neutral animate-fade-right">
+        <button
+          className="btn btn-neutral animate-fade-right"
+          onClick={scrollToContact}
+        >
           Contact me !
         </button>
       </div>
