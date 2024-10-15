@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="flex gap-5">
           <a
-            href="www.linkedin.com/in/alan-leing-869a44273"
+            href="https://www.linkedin.com/in/alan-leing-869a44273"
             rel="noreferer"
             target="_blank"
           >
