@@ -19,27 +19,34 @@ const ProjectSection = () => {
         <div className="w-full flex justify-center">
           <h2 className="text-base-100 text-3xl">My projects</h2>
         </div>
-        <div className="h-full w-full flex flex-col items-center pt-10 gap-20 px-10">
+        <div className="h-full flex items-center justify-center p-10 gap-20 flex-wrap">
           <CardProject
-            title="Pomodoro"
+            title="TimeCraft Pomodoro"
             description="The Pomodoro Timer is a simple and effective application based on the Pomodoro technique for time management with personalized settings."
             image={pomodoro}
+            urlDemo={"https://timecraftpomodoro.netlify.app"}
+            urlGit={"https://github.com/TokioDevv/Pomodoro"}
           />
           <CardProject
-            title="Pokecentral"
+            title="PokeCentral"
             description="PokeCentral is your ultimate Pokédex companion, providing a comprehensive database of Pokémon species along with detailed information and interactive features."
             image={pokecentral}
+            urlDemo={"https://pokecentral.netlify.app"}
+            urlGit={"https://github.com/TokioDevv/PokeCentral"}
           />
           <CardProject
-            title="Ecommerce"
+            title="E-commerce cart"
             description="The Gloss'Galor Simulator is a virtual storefront designed to replicate the experience of shopping for lip gloss products online."
             image={ecommerce}
+            urlDemo={"https://glosscart.netlify.app/"}
+            urlGit={"https://github.com/TokioDevv/Gloss-Galor"}
           />
           <CardProject
-            title="Markdown"
-            description="Markdownify is a simple and intuitive online Markdown editor designed to streamline the creation of formatted documents in Markdown.
-"
+            title="Markdownify"
+            description="Markdownify is a simple and intuitive online Markdown editor designed to streamline the creation of formatted documents in Markdown."
             image={markdown}
+            urlDemo={"https://markdownhrs.netlify.app"}
+            urlGit={"https://github.com/TokioDevv/MarkDownify"}
           />
         </div>
       </div>

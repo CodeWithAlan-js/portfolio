@@ -5,9 +5,9 @@ import "react-medium-image-zoom/dist/styles.css";
 
 const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
   return (
-    <div className="card bg-base-100 rounded-t-lg">
+    <div className="card bg-base-100 md:w-1/5 hover:scale-105 transition ease-in-out 0.5s">
       <Zoom>
-        <figure className="shadow-xl ">
+        <figure className="shadow-xl rounded-t-lg ">
           <img src={image} alt="project" />
         </figure>
       </Zoom>
@@ -15,16 +15,16 @@ const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
         <h5 className="card-title text-2xl">{title}</h5>
         <p className="card-text">{description}</p>
         <div className="flex justify-end items-center gap-5">
-          <a href={urlGit}>
+          <a href={urlGit} target="_blank" rel="noreferer">
             <FaGithub
-              className="hover:text-accent transition ease-out 0.5s"
-              size={45}
+              className="hover:text-accent transition ease-out 0.5s cursor-pointer"
+              size={35}
             />
           </a>
-          <a href={urlDemo}>
+          <a href={urlDemo} target="_blank" rel="noreferer">
             <CgMediaLive
-              size={45}
-              className="hover:text-accent transition ease-out 0.5s"
+              size={35}
+              className="hover:text-accent transition ease-out 0.5s cursor-pointer"
             />
           </a>
         </div>

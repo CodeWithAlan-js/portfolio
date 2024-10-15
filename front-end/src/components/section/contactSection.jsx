@@ -39,7 +39,7 @@ const ContactSection = ({ contactRef }) => {
                 type="text"
                 name="name"
                 id="name"
-                className="input input-bordered"
+                className="input input-bordered text-lg"
                 placeholder="Name"
                 required
               />
@@ -53,7 +53,7 @@ const ContactSection = ({ contactRef }) => {
                 type="email"
                 name="email"
                 id="email"
-                className="input input-bordered"
+                className="input input-bordered  text-lg"
                 placeholder="Email"
                 required
               />
@@ -66,7 +66,7 @@ const ContactSection = ({ contactRef }) => {
               <textarea
                 name="message"
                 id="message"
-                className="textarea textarea-bordered resize-none h-40"
+                className="textarea textarea-bordered resize-none h-40  text-lg"
                 placeholder="Message"
                 required
               ></textarea>
@@ -79,7 +79,7 @@ const ContactSection = ({ contactRef }) => {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="btn btn-accent w-32 self-center hover:btn-base-100"
+                className="btn btn-accent w-32 self-center hover:btn-base-100 text-lg"
               >
                 {state.submitting ? "Sending..." : "Send"}
               </button>

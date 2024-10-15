@@ -31,19 +31,19 @@ const HomeSection = ({ contactRef }) => {
             alt=""
           />
         </div>
-        <p className="text-center text-l animate-fade-left">
+        <p className="text-center font-medium text-l animate-fade-left md:w-1/4">
           My name is Alan, I'm 23 years old, and I'm a passionate full-stack
           developer. I enjoy building efficient and innovative web solutions,
           from user interfaces to backend infrastructures.
         </p>
         <button
-          className="btn btn-neutral animate-fade-right"
+          className="btn btn-neutral animate-fade-right text-base-100 hover:btn-accent"
           onClick={scrollToContact}
         >
           Contact me !
         </button>
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center animate-bounce">
         <FaChevronDown className="animate-bounce" size={35} />
       </div>
     </section>
