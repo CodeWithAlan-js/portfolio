@@ -1,7 +1,7 @@
-import imgDecoration from "../../assets/imgDecoration.svg";
+import imgDecoration from "../../assets/imgDecoration.webp";
 import { FaChevronDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import profil from "../../assets/profil.png";
+import profil from "../../assets/profil.webp";
 
 const HomeSection = ({ contactRef }) => {
   const [visible, setVisible] = useState(false);
@@ -22,22 +22,33 @@ const HomeSection = ({ contactRef }) => {
         <h1 className="text-5xl animate-fade-right">Welcome</h1>
         {visible && <div className="animate-divAppear bg-neutral h-1"></div>}
       </div>
-      <div className="flex flex-col justify-center items-center h-full mx-10 gap-5">
+      <div className="flex flex-col justify-center items-center h-full gap-5">
         <div className="flex flex-col justify-end items-end ">
-          <img className="w-20 animate-wiggle" src={imgDecoration} alt="" />
-          <img
-            src={profil}
-            className="rounded-full h-40 w-40 animate-fade "
-            alt=""
-          />
+          <picture>
+            <img
+              className="w-20 animate-wiggle"
+              src={imgDecoration}
+              alt="decoration"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <img
+              src={profil}
+              className="rounded-full h-40 w-40 animate-fade "
+              alt="profil image"
+              loading="lazy"
+            />
+          </picture>
         </div>
-        <p className="text-center font-medium text-l animate-fade-left md:w-1/4">
-          My name is Alan, I'm 23 years old, and I'm a passionate full-stack
-          developer. I enjoy building efficient and innovative web solutions,
-          from user interfaces to backend infrastructures.
+        <p className="px-5 md:px-0 text-center text-lg font-medium animate-fade-left w-11/12 md:w-6/12 xl:w-4/12 leading-8">
+          My name is Alan, a 23-year-old developer.
+          <br />I specialize in crafting efficient and innovative web solutions,
+          ranging from seamless user interfaces to robust backend
+          infrastructures.
         </p>
         <button
-          className="btn btn-neutral animate-fade-right text-base-100 hover:btn-accent"
+          className="btn btn-neutral animate-fade-right text-base-100 hover:btn-accent text-xl px-6"
           onClick={scrollToContact}
         >
           Contact me !

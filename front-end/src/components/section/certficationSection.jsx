@@ -20,7 +20,7 @@ const CertificationSection = () => {
   });
 
   return (
-    <section className="flex flex-col justify-center items-center py-10">
+    <section className="flex flex-col justify-center items-center pb-10">
       <div
         ref={ref}
         className={`${inView ? "animate-flip-up opacity-100" : "opacity-0"}`}
@@ -41,7 +41,12 @@ const CertificationSection = () => {
               key={index}
               className="flex justify-center items-center"
             >
-              <img className="h-32 w-auto" src={certif.src} alt={certif.alt} />
+              <img
+                className="h-32 w-auto"
+                src={certif.src}
+                alt={certif.alt}
+                loading="lazy"
+              />
             </SwiperSlide>
           ))}
         </Swiper>

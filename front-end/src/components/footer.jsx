@@ -26,6 +26,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/alan-leing-869a44273"
             rel="noreferer"
             target="_blank"
+            title="Visit my LinkedIn profile"
           >
             <FaLinkedin className="text-3xl text-neutral hover:text-accent transition ease-in-out 0.5s" />
           </a>
@@ -33,17 +34,26 @@ const Footer = () => {
             href="https://github.com/CodeWithAlan-js"
             rel="noreferer"
             target="_blank"
+            title="Visit my GitHub profile"
           >
             <FaGithub className="text-3xl text-neutral hover:text-accent  transition ease-in-out 0.5s" />
           </a>
-          <a href="https://x.com/CodeWithAlan" rel="noreferer" target="_blank">
+          <a
+            href="https://x.com/CodeWithAlan"
+            rel="noreferer"
+            target="_blank"
+            title="Follow me on Twitter"
+          >
             <FaXTwitter className="text-3xl text-neutral hover:text-accent  transition ease-in-out 0.5s" />
           </a>
         </div>
         <div className="flex gap-5">
           <p className="text-xl">Made with</p>
-          <FaReact className="text-3xl text-neutral " />
-          <RiTailwindCssFill className="text-3xl text-neutral " />
+          <FaReact className="text-3xl text-neutral " title="React" />
+          <RiTailwindCssFill
+            className="text-3xl text-neutral "
+            title="Tailwind CSS"
+          />
         </div>
       </div>
     </footer>

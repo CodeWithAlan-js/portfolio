@@ -8,7 +8,7 @@ const SkillSection = () => {
   });
 
   return (
-    <section className=" flex py-10">
+    <section className="flex py-10">
       <div
         ref={ref}
         className={` ${
@@ -18,8 +18,8 @@ const SkillSection = () => {
         }`}
       >
         <h2 className="text-3xl  text-neutral">Skills</h2>
-        <div className="w-3/4 md:w-2/5 border border-neutral rounded mt-10 p-6">
-          <div className="flex flex-col justify-center items-start gap-10 md:gap-20 md:flex-row">
+        <div className="flex justify-center border border-neutral rounded mt-10 p-6 w-3/5 sm:w-auto">
+          <div className="flex flex-col justify-center items-start gap-10 md:gap-40 sm:flex-row">
             <SkillComponents
               title="Front-end"
               skill={skills.filter((skill) =>
