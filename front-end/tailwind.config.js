@@ -4,7 +4,11 @@ import tailwindcssAnimated from "tailwindcss-animated";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Raleway", "sans-serif"],
+      },
+    },
     keyframes: {
       divAppear: {
         "0%": { opacity: 0, width: "0%" },

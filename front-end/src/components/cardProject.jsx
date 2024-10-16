@@ -11,7 +11,7 @@ const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
           <picture>
             <img
               src={image}
-              alt="project"
+              alt={`Screenshot of ${title} project`}
               className="w-full h-full object-cover "
               loading="lazy"
             />
@@ -19,17 +19,31 @@ const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
         </figure>
       </Zoom>
       <div className="card-body p-5 flex flex-col justify-between h-1/3">
-        <h5 className="card-title text-2xl">{title}</h5>
+        <h2 className="card-title text-2xl">{title}</h2>{" "}
         <p className="card-text text-base flex items">{description}</p>
         <div className="flex justify-end items-center gap-5">
-          <a href={urlGit} target="_blank" rel="noreferer">
+          <a
+            href={urlGit}
+            target="_blank"
+            rel="noreferer"
+            aria-label={`View ${title} on GitHub`}
+            role="link"
+            tabIndex="0"
+          >
             <FaGithub
               className="hover:text-accent transition ease-out 0.5s cursor-pointer"
               size={35}
             />
           </a>
           {urlDemo && (
-            <a href={urlDemo} target="_blank" rel="noreferer">
+            <a
+              href={urlDemo}
+              target="_blank"
+              rel="noreferer"
+              aria-label={`View ${title} live demo`}
+              role="link"
+              tabIndex="0"
+            >
               <CgMediaLive
                 size={35}
                 className="hover:text-accent transition ease-out 0.5s cursor-pointer"
