@@ -41,8 +41,9 @@ const HomeSection = ({ contactRef }) => {
             />
           </picture>
         </div>
-        <p className="px-5 md:px-0 text-center text-lg font-medium animate-fade-left w-11/12 md:w-6/12 xl:w-4/12 leading-8">
-          My name is Alan, a 23-year-old developer.
+        <p className="px-5 md:px-0 text-center text-lg font-medium animate-fade-left w-11/12 md:w-9/12 xl:w-4/12 leading-8">
+          My name is Alan, and I am a 23-year-old{" "}
+          <span className="font-bold">Fullstack JavaScript Developer</span>.
           <br />I specialize in crafting efficient and innovative web solutions,
           ranging from seamless user interfaces to robust backend
           infrastructures.

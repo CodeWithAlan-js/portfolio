@@ -8,18 +8,18 @@ const SkillSection = () => {
   });
 
   return (
-    <section className="flex py-10">
+    <section className="flex py-10 w-screen">
       <div
         ref={ref}
         className={` ${
           inView
-            ? "animate-fade w-full flex  flex-col items-center opacity-100"
+            ? "animate-fade w-full flex flex-col items-center opacity-100"
             : "opacity-0"
         }`}
       >
-        <h2 className="text-3xl  text-neutral">Skills</h2>
-        <div className="flex justify-center border border-neutral rounded mt-10 p-6 w-3/5 sm:w-auto">
-          <div className="flex flex-col justify-center items-start gap-10 md:gap-40 sm:flex-row">
+        <h2 className="text-3xl text-neutral">Skills</h2>
+        <div className="border border-neutral mt-10 rounded w-4/5">
+          <div className="flex flex-1 items-start flex-wrap justify-center gap-20 p-10 md:justify-evenly w-full">
             <SkillComponents
               title="Front-end"
               skill={skills.filter((skill) =>
@@ -34,6 +34,12 @@ const SkillSection = () => {
                 ["node", "express", "mongodb"].includes(
                   skill.name.toLowerCase()
                 )
+              )}
+            />
+            <SkillComponents
+              title="Methodologies"
+              skill={skills.filter((skill) =>
+                ["agile", "mvc"].includes(skill.name.toLowerCase())
               )}
             />
             <SkillComponents

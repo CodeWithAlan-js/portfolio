@@ -19,8 +19,10 @@ const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
         </figure>
       </Zoom>
       <div className="card-body p-5 flex flex-col justify-between h-1/3">
-        <h2 className="card-title text-2xl">{title}</h2>{" "}
-        <p className="card-text text-base flex items">{description}</p>
+        <div className="flex ">
+          <h2 className="card-title text-2xl">{title}</h2>{" "}
+        </div>
+        <p className="card-text text-lg flex items">{description}</p>
         <div className="flex justify-end items-center gap-5">
           <a
             href={urlGit}

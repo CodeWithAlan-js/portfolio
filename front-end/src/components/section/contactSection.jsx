@@ -29,7 +29,7 @@ const ContactSection = ({ contactRef }) => {
         }`}
       >
         <h2 className="text-base-100 text-3xl mb-10">Contact me</h2>
-        <div className="h-[550px] w-96 flex justify-center">
+        <div className="h-[550px] w-[380px] md:w-[450px] flex justify-center">
           <form
             onSubmit={handleSubmit}
             className="h-full w-full border rounded flex flex-col justify-around p-6"
