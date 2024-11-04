@@ -4,7 +4,8 @@ import { useInView } from "react-intersection-observer";
 
 const SkillSection = () => {
   const { ref, inView } = useInView({
-    threshold: 0.05,
+    threshold: 0.1,
+    triggerOnce: true,
   });
 
   return (

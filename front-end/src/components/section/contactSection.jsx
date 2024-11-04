@@ -4,7 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 const ContactSection = ({ contactRef }) => {
   const [state, handleSubmit] = useForm("myzyywqv");
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.3,
   });
 
   if (state.succeeded) {

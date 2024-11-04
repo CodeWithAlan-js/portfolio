@@ -14,8 +14,8 @@ const HomeViews = () => {
     <main className="min-h-screen h-screen w-screen flex flex-col  overflow-x-hidden ">
       <HomeSection contactRef={contactRef} />
       <ProjectSection />
-      <SkillSection />
-      <CertificationSection />
+   <SkillSection />
+        <CertificationSection />
       <AboutSection />
       <ContactSection contactRef={contactRef} />
       <Footer />

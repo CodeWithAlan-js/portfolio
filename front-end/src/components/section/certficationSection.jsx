@@ -16,7 +16,8 @@ const certifications = [
 
 const CertificationSection = () => {
   const { ref, inView } = useInView({
-    threshold: 0.05,
+    threshold: 0.5,
+      triggerOnce: true,
   });
 
   return (
