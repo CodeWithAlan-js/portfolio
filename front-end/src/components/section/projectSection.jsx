@@ -1,7 +1,7 @@
 import CardProject from "../cardProject";
 import pomodoro from "../../assets/pomodoro.webp";
 import pokecentral from "../../assets/pokecentral.webp";
-import ecommerce from "../../assets/ecommerce.webp";
+import jjm from "../../assets/jjm.webp";
 import automate from "../../assets/automate.webp";
 import { useInView } from "react-intersection-observer";
 
@@ -22,7 +22,7 @@ const ProjectSection = () => {
         <div className="h-auto flex items-center justify-center p-10 gap-20 flex-wrap transition-all duration-500 ease-in-out">
           <CardProject
             title="Automate"
-            description="Automate is a web app designed for garages to streamline vehicle management. It simplifies tracking repairs, maintenance, and appointments, centralizing client and vehicle information."
+            description="Automate is a web app designed for garages to streamline vehicle management. It centralizing client and vehicle information."
             image={automate}
             urlGit={"https://github.com/CodeWithAlan-js/AutoMate"}
           />
@@ -41,11 +41,9 @@ const ProjectSection = () => {
             urlGit={"https://github.com/TokioDevv/PokeCentral"}
           />
           <CardProject
-            title="E-commerce cart"
-            description="The Gloss'Galor Simulator is a virtual storefront designed to replicate the experience of shopping for lip gloss products online."
-            image={ecommerce}
-            urlDemo={"https://glosscart.netlify.app/"}
-            urlGit={"https://github.com/TokioDevv/Gloss-Galor"}
+            title="Jerôme Breton Menuiserie"
+            description="I designed and developed a modern and intuitive multi-page website for Jérôme Breton Menuiserie, a company specializing in carpentry and woodworking."
+            image={jjm}
           />
         </div>
       </div>

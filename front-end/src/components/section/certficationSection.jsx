@@ -5,7 +5,6 @@ import certif1 from "../../assets/certif1.svg";
 import certif2 from "../../assets/certif2.svg";
 import certif3 from "../../assets/certif3.svg";
 import certif4 from "../../assets/certif4.svg";
-import { useInView } from "react-intersection-observer";
 
 const certifications = [
   { src: certif1, alt: "Certification 1" },
@@ -15,17 +14,9 @@ const certifications = [
 ];
 
 const CertificationSection = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-      triggerOnce: true,
-  });
-
   return (
     <section className="flex flex-col justify-center items-center pb-10">
-      <div
-        ref={ref}
-        className={`${inView ? "animate-flip-up opacity-100" : "opacity-0"}`}
-      >
+      <div>
         <h2 className="p-3 rounded-t-md text-3xl bg-neutral border-b text-base-100">
           Certifications
         </h2>

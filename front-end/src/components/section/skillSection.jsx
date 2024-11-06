@@ -32,7 +32,7 @@ const SkillSection = () => {
             <SkillComponents
               title="Back-end"
               skill={skills.filter((skill) =>
-                ["node", "express", "mongodb"].includes(
+                ["node","php",  "express", "mongodb"].includes(
                   skill.name.toLowerCase()
                 )
               )}

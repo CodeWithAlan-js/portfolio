@@ -5,14 +5,14 @@ import "react-medium-image-zoom/dist/styles.css";
 
 const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
   return (
-    <div className="card bg-base-100 w-96 h-[470px] flex flex-col justify-between hover:scale-105 transition ease-in-out 0.5s">
+    <div className="card bg-base-100 w-96 h-[500px] flex flex-col justify-between hover:scale-105 transition ease-in-out 0.5s">
       <Zoom>
-        <figure className="shadow-xl rounded-t-lg h-2/3 overflow-hidden">
+        <figure className="shadow-xl rounded-t-lg w-full h-2/3 overflow-hidden">
           <picture>
             <img
               src={image}
               alt={`Screenshot of ${title} project`}
-              className="w-full h-full object-cover "
+              className="w-full rounded-t-lg object-cover"
               loading="lazy"
             />
           </picture>
@@ -24,19 +24,21 @@ const CardProject = ({ title, description, image, urlDemo, urlGit }) => {
         </div>
         <p className="card-text text-lg flex items">{description}</p>
         <div className="flex justify-end items-center gap-5">
-          <a
-            href={urlGit}
-            target="_blank"
-            rel="noreferer"
-            aria-label={`View ${title} on GitHub`}
-            role="link"
-            tabIndex="0"
-          >
-            <FaGithub
-              className="hover:text-accent transition ease-out 0.5s cursor-pointer"
-              size={35}
-            />
-          </a>
+          {urlGit && (
+            <a
+              href={urlGit}
+              target="_blank"
+              rel="noreferer"
+              aria-label={`View ${title} source code`}
+              role="link"
+              tabIndex="0"
+            >
+              <FaGithub
+                size={35}
+                className="hover:text-accent transition ease-out 0.5s cursor-pointer"
+              />
+            </a>
+          )}
           {urlDemo && (
             <a
               href={urlDemo}
